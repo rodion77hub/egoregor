@@ -1,0 +1,201 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0d1b2a;
+    color: #e6f7ff;
+    line-height: 1.7;
+    padding: 0;
+}
+
+/* Навигация */
+.navbar {
+    background: #1b263b;
+    padding: 12px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #4cc9f0;
+}
+
+.navbar a {
+    color: #e6f7ff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: #4cc9f0;
+    color: #0d1b2a;
+}
+
+/* Заголовок */
+header {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+header h1 {
+    color: #4cc9f0;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #a9c4d9;
+}
+
+/* Основной контент */
+main {
+    padding: 0 20px 30px;
+}
+
+/* Блоки */
+.content-block {
+    background: #1b263b;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+    border: 1px solid #4cc9f040;
+}
+
+.content-block h2 {
+    color: #4cc9f0;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.content-block p,
+.content-block li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #d0e8ff;
+}
+
+.content-block ul {
+    padding-left: 20px;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #4cc9f030;
+}
+
+th {
+    background: #4cc9f0;
+    color: #0d1b2a;
+    font-weight: bold;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #223045;
+}
+
+/* Фото */
+.artist-photo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artist-photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border: 2px solid #4cc9f0;
+}
+
+/* Цитаты */
+.quote-card {
+    background: #1b263b;
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #d0e8ff;
+    position: relative;
+    border: 1px solid #4cc9f040;
+}
+
+.quote-card:before,
+.quote-card:after {
+    content: """;
+    font-size: 2.5rem;
+    color: #4cc9f0;
+    opacity: 0.8;
+    position: absolute;
+}
+
+.quote-card:before {
+    top: 10px;
+    left: 15px;
+}
+
+.quote-card:after {
+    content: """;
+    bottom: -20px;
+    right: 15px;
+}
+
+/* Кнопка VK */
+.listen-button {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.listen-button a {
+    display: inline-block;
+    background: #4cc9f0;
+    color: #0d1b2a;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(76, 201, 240, 0.4);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.listen-button a:hover {
+    background: #3a9fcf;
+    transform: scale(1.03);
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #8ca9c4;
+    font-size: 0.95rem;
+}
